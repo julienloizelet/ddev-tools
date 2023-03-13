@@ -1,0 +1,3 @@
+name: php71
+php_version: "7.1"
+composer_version: "1"

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+## Description: Run PHPCBF for some folder
+## Usage: phpcbf bin_source folder
+## Example: "ddev phpcbf ./my-own-modules/my-module/vendor/bin/phpcbf my-own-modules/my-module PSR2"
+
+PHPCBF_SOURCE=${1:-./}
+MODULE_SOURCE=${2:-my-own-modules/my-module}
+STANDARD=${3:-PSR12}
+
+/usr/bin/php $PHPCBF_SOURCE/vendor/bin/phpcbf --standard=$STANDARD $MODULE_SOURCE

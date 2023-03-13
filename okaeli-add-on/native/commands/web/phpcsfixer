@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+## Description: Run PHPCS FIXER for some folder
+## Usage: phpcsfixer source_folder fixer_folder
+## Example: "ddev phpcsfixer my-own-modules/my-module tools/php-cs-fixer"
+
+
+SOURCE=${1:-my-own-modules/my-module}
+FIXER=${2:-tools/php-cs-fixer}
+
+cd $SOURCE &&
+/usr/bin/php  $FIXER/vendor/bin/php-cs-fixer fix

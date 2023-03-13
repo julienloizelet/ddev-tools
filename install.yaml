@@ -1,0 +1,5 @@
+name: okaeli-add-on
+
+# list of files and directories listed that are copied into project .ddev directory
+project_files:
+- okaeli-add-on

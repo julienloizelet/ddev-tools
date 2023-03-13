@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+## Description: Configure CrowdSec and CrowdSec Bouncer
+## Usage: crowdsec-config
+## Example: "ddev crowdsec-config"
+
+BOUNCER_KEY=$(ddev create-bouncer | sed 's/\r$//')
+echo "Bouncer created"
+PROXY_IP=$(ddev find-ip ddev-router | sed 's/\r$//')
+# user/password authentication and TLS authentication are mutually exclusive
+# ddev create-watcher
+#ddev create-watcher PhpUnitTestMachine PhpUnitTestMachinePassword
+# echo "Watchers created"
+SED_EXPRESSION_ONE=$(echo "'s/\x27api_key\x27 => \x27\(.*\)\x27/\x27api_key\x27 => \x27${BOUNCER_KEY}\x27/g'" "/var/www/html/my-own-modules/crowdsec-php-lib/scripts/auto-prepend/settings.php")
+SED_EXPRESSION_TWO=$(echo "'s/\x27trust_ip_forward_array\x27 => \[\x27\(.*\)\x27\]/\x27trust_ip_forward_array\x27 => \[\x27${PROXY_IP}\x27\]/g'" "/var/www/html/my-own-modules/crowdsec-php-lib/scripts/auto-prepend/settings.php")
+echo "Now setting ${BOUNCER_KEY} as CrowdSec_Bouncer Api key"
+ddev exec sed -i -e "$SED_EXPRESSION_ONE"
+echo "Now setting ${PROXY_IP} as CrowdSec_Bouncer trusted forward IPs"
+ddev exec sed -i -e "$SED_EXPRESSION_TWO"
+echo "Please enable auto-prepend if necessary (Run ddev crowdsec-prepend-nginx from the .ddev folder)"
+exit 0

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+## Description: Run PHPSTAN for some folder
+## Usage: phpstan phpstan_root_source ruleset_folder code_folder
+## Example: "ddev phpstan my-own-modules/my-module"
+
+ROOT=${1:-.}
+RULESET_PATH=${2:-phpstan.neon}
+MODULE_SOURCE=${3:-src}
+#
+cd $SOURCE &&
+/usr/bin/php $ROOT/vendor/bin/phpstan analyse --level 1 --no-progress --memory-limit=4G -c $ROOT/$RULESET_PATH $MODULE_SOURCE

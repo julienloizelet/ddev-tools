@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+## Description: Run PHPMD for some folder
+## Usage: phpmd root_folder ruleset_path code_folder
+## Example: "ddev phpmd ./my-own-modules/crowdsec-php-lib tools/phpmd/rulesets.xml src"
+
+ROOT=${1:-.}
+RULESET_PATH=${2:-ruleset.xml}
+MODULE_SOURCE=${3:-src}
+FORMAT=${4:-text}
+
+
+/usr/bin/php $ROOT/vendor/bin/phpmd  $ROOT/$MODULE_SOURCE $FORMAT $ROOT/$RULESET_PATH

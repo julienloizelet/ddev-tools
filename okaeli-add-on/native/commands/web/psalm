@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+## Description: Run PSALM for some folder
+## Usage: psalm source config_source
+## Example: "ddev psalm ./my-own-modules/my-module/ ./my-own-modules/my-module/psalm"
+
+
+PSALM_SOURCE=${1:-./}
+CONFIG_SOURCE=${2:-}
+
+/usr/bin/php $PSALM_SOURCE/vendor/bin/psalm  --root=$CONFIG_SOURCE  --show-info=true

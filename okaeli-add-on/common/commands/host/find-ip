@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+## Description: Find IP of a container or host
+## Usage: find-ip serviceName
+## Example: "ddev find-ip memcached"
+
+
+# Mandatory Tools
+DOCKER="docker"
+if [ -z "$DOCKER" ];
+then
+    echo "'docker' was not found on your system." >&2
+    exit 1
+fi
+
+SERVICE_NAME=${1:-host}
+
+CONTAINER_NAME=ddev-${DDEV_SITENAME}-${SERVICE_NAME}
+
+if [ "$SERVICE_NAME" == "ddev-router" ];
+then
+    CONTAINER_NAME=ddev-router
+fi
+
+
+if [ "$SERVICE_NAME" == "host" ];
+then
+   $DOCKER network inspect -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}'  ddev_default
+else
+   $DOCKER inspect -f '{{.NetworkSettings.Networks.ddev_default.IPAddress}}'  $CONTAINER_NAME
+fi

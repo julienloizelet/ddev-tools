@@ -1,0 +1,22 @@
+version: '3.6'
+services:
+  crowdsec:
+    image: crowdsecurity/crowdsec:latest
+    container_name: ddev-${DDEV_SITENAME}-crowdsec
+    hostname: ${DDEV_SITENAME}-crowdsec
+    # These labels ensure this service is discoverable by ddev.
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    volumes:
+      - ".:/mnt/ddev_config"
+      - ./custom_files/crowdsec/cfssl:/tmp/cfssl
+      - ./custom_files/crowdsec/custom-config.yaml:/etc/crowdsec/config.yaml.local
+      - ./custom_files/crowdsec/custom-local-api-credentials.yaml:/etc/crowdsec/local_api_credentials.yaml.local
+    environment:
+      - DISABLE_AGENT=true
+    ports:
+      - "8080"
+  web:
+    links:
+      - crowdsec:crowdsec

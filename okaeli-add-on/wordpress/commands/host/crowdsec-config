@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## Description: Configure CrowdSec and CrowdSec Bouncer
+## Usage: crowdsec-config
+## Example: "ddev crowdsec-config"
+
+BOUNCER_KEY=$(ddev create-bouncer wordpress | sed 's/\r$//')
+API_URL="https://crowdsec:8080"
+echo "Bouncer created"
+echo "Now setting ${BOUNCER_KEY} as CrowdSec_Bouncer Api key"
+ddev exec wp option set crowdsec_api_key ${BOUNCER_KEY}
+echo "Now setting ${API_URL} as CrowdSec_Bouncer Api url"
+ddev exec wp option set crowdsec_api_url ${API_URL}
+exit 0
