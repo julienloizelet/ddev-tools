@@ -4,7 +4,28 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Work on a Magento 2 / Mage-OS module](#work-on-a-magento-2--mage-os-module)
+    - [Prepare DDEV environment](#prepare-ddev-environment)
+      - [Create a Magento 2 DDEV project](#create-a-magento-2-ddev-project)
+      - [Install my add-on and copy some files](#install-my-add-on-and-copy-some-files)
+    - [Magento 2 installation](#magento-2-installation)
+    - [Set up Magento 2](#set-up-magento-2)
+    - [Configure Magento 2 for local development](#configure-magento-2-for-local-development)
+    - [Install your module](#install-your-module)
+  - [Work on a WordPress plugin](#work-on-a-wordpress-plugin)
+    - [Prepare DDEV environment](#prepare-ddev-environment-1)
+      - [Create a WordPress DDEV project](#create-a-wordpress-ddev-project)
+      - [Install my add-on and copy some files](#install-my-add-on-and-copy-some-files-1)
+    - [WordPress installation](#wordpress-installation)
+    - [Set up WordPress](#set-up-wordpress)
+    - [Install your plugin](#install-your-plugin)
+- [License](#license)
+- [Contribute](#contribute)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
