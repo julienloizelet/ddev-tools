@@ -1,6 +1,6 @@
 
 
-# My DDEV add-on
+# DDEV tools
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -38,7 +38,7 @@ I mainly use it to work on Magento 2 modules, WordPress plugins and other PHP pr
 
 ## Installation
 
-`ddev get julienloizelet/ddev-add-on`
+`ddev get julienloizelet/ddev-tools`
 
 
 ## Usage
@@ -76,13 +76,12 @@ ddev config --project-type=magento2 --php-version=8.1 --docroot=pub --create-doc
 ```
 
 
-##### Install my add-on and copy some files
+##### Install tools add-on and copy some files
 
 ```bash
-ddev get julienloizelet/ddev-add-on
-cp -r .ddev/okaeli-add-on/common/* .ddev/
-cp -r .ddev/okaeli-add-on/magento2/* .ddev/
-cp .ddev/docker_compose_files/docker-compose.elasticsearch.yaml .ddev/
+ddev get julienloizelet/ddev-tools
+cp -r .ddev/okaeli-add-on/magento2/commands/* .ddev/commands
+ddev get ddev/ddev-elasticsearch
 ddev start
 ```
 
@@ -173,12 +172,11 @@ ddev config --project-type=wordpress
 ```
 
 
-##### Install my add-on and copy some files
+##### Install tools add-on and copy some files
 
 ```bash
-ddev get julienloizelet/ddev-add-on
-cp -r .ddev/okaeli-add-on/common/* .ddev/
-cp -r .ddev/okaeli-add-on/wordpress/* .ddev/
+ddev get julienloizelet/ddev-tools
+cp -r .ddev/okaeli-add-on/wordpress/commands/* .ddev/commands
 ddev start
 ```
 
