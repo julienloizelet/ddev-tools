@@ -31,7 +31,7 @@ teardown() {
 @test "install from release" {
   set -eu -o pipefail
   cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
-  echo "# ddev get julienloizelet/ddev-add-on with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
+  echo "# ddev get julienloizelet/ddev-tools with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
   ddev get julienloizelet/ddev-add-on
   ddev restart >/dev/null
 
