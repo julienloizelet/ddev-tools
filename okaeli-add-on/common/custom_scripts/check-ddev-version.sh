@@ -14,7 +14,7 @@ function show_banner() {
 show_banner
 cd ~
 CURRENT=$(printenv | grep -E "^DDEV_VERSION=v(.*)$" | sed 's/DDEV_VERSION=v//g')
-EXPECTED=$(cat DDEV_EXPECTED_VERSION.txt)
+EXPECTED=$(grep -E "EXPECTED=*" DDEV_EXPECTED_VERSION.txt | sed 's/EXPECTED=//g')
 
 if [[ $CURRENT == $EXPECTED ]]
 then
