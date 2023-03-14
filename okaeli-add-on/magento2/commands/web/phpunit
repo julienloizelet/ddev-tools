@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+#ddev-generated
+# Remove the line above if you don't want this file to be overwritten when you run ddev get
 ## Description: Run PHP UNIT test for some folder
 ## Usage: phpunit folder
 ## Example: "ddev phpunit my-own-modules/my-module/Test/Unit"

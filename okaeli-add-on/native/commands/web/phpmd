@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+#ddev-generated
+# Remove the line above if you don't want this file to be overwritten when you run ddev get
 ## Description: Run PHPMD for some folder
 ## Usage: phpmd root_folder ruleset_path code_folder
 ## Example: "ddev phpmd ./my-own-modules/crowdsec-php-lib tools/phpmd/rulesets.xml src"

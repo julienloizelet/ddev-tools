@@ -1,4 +1,6 @@
 #!/bin/bash
+#ddev-generated
+# Remove the line above if you don't want this file to be overwritten when you run ddev get
 # Check DDEV version
 CURRENT_DIR=$(dirname "$0");
 source "${CURRENT_DIR}/bash/helpers/colors.sh";

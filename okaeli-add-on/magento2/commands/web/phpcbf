@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+#ddev-generated
+# Remove the line above if you don't want this file to be overwritten when you run ddev get
 ## Description: Run PHPCBF for some folder
 ## Usage: phpcbf folder
 ## Example: "ddev phpcbf my-own-modules/my-module"

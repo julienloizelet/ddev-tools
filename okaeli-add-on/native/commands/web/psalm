@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+#ddev-generated
+# Remove the line above if you don't want this file to be overwritten when you run ddev get
 ## Description: Run PSALM for some folder
 ## Usage: psalm source config_source
 ## Example: "ddev psalm ./my-own-modules/my-module/ ./my-own-modules/my-module/psalm"

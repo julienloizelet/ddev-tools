@@ -1,4 +1,9 @@
+
 <?xml version="1.0"?>
+<!--
+#ddev-generated
+# Remove the line above if you don't want this file to be overwritten when you run ddev get
+-->
 <config xmlns:xi="http://www.w3.org/2001/XInclude">
     <profile>
         <admin_users>1</admin_users> <!--  Number of admin users to generate -->

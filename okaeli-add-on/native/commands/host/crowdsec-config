@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+#ddev-generated
+# Remove the line above if you don't want this file to be overwritten when you run ddev get
 ## Description: Configure CrowdSec and CrowdSec Bouncer
 ## Usage: crowdsec-config
 ## Example: "ddev crowdsec-config"
