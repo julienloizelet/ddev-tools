@@ -12,6 +12,13 @@ file and `project_files` listed in the `install.yaml` file.
 ------
 
 
+## [0.0.6](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.6) - 2023-03-14
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.5...v0.0.6)
+
+- Fix `varnish-profile.xml` file
+
+---
+
 ## [0.0.5](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.5) - 2023-03-14
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.4...v0.0.5)
 
