@@ -2,10 +2,10 @@
 
 ## Description: Create a bouncer and return bouncer key
 ## Usage: create-bouncer bouncerName
-## Example: "ddev create-bouncer php"
+## Example: "ddev create-bouncer my-bouncer"
 
 
-BOUNCER_NAME=${1:-php}
+BOUNCER_NAME=${1:-my-bouncer}
 
 EXIST=$(cscli bouncers list -o raw | { grep "${BOUNCER_NAME}" || true; })
 

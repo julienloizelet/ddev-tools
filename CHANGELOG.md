@@ -11,6 +11,12 @@ The [public API](https://semver.org/spec/v2.0.0.html#spec-item-1) for this proje
 ------
 
 
+## [0.0.3](https://github.com/julienloizelet/ddev-add-on/releases/tag/v0.0.3) - 2023-03-14
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-add-on/compare/v0.0.2...v0.0.3)
+
+- Remove useless files
+
+
 ## [0.0.2](https://github.com/julienloizelet/ddev-add-on/releases/tag/v0.0.2) - 2023-03-13
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-add-on/compare/v0.0.1...v0.0.2)
 
