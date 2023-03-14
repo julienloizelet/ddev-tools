@@ -72,7 +72,7 @@ m2-sources
 
 ```bash
 mkdir m2-sources && cd m2-sources
-ddev config --project-type=magento2 --php-version=8.1 --docroot=pub --create-docroot --disable-settings-management
+ddev config --project-type=magento2 --project-name=your-project-name --php-version=8.1 --docroot=pub --create-docroot --disable-settings-management
 ```
 
 
@@ -95,7 +95,7 @@ You will need your Magento 2 credentials to install the source code.
 #### Set up Magento 2
 
      ddev magento setup:install \
-                           --base-url=https://your-url.ddev.site \
+                           --base-url=https://your-project-name.ddev.site \
                            --db-host=db \
                            --db-name=db \
                            --db-user=db \
@@ -104,8 +104,8 @@ You will need your Magento 2 credentials to install the source code.
                            --admin-firstname=admin \
                            --admin-lastname=admin \
                            --admin-email=admin@admin.com \
-                           --admin-user=admin \
-                           --admin-password=admin123 \
+                           --admin-user=**** \
+                           --admin-password=**** \
                            --language=en_US \
                            --currency=USD \
                            --timezone=America/Chicago \
@@ -168,7 +168,7 @@ wp-sources
 
 ```bash
 mkdir wp-sources && cd wp-sources
-ddev config --project-type=wordpress
+ddev config --project-type=wordpress --project-name=your-project-name
 ```
 
 
@@ -191,8 +191,8 @@ ddev wp core download
 #### Set up WordPress
 
 ```bash
-     ddev exec wp core install --url='https://your-url.ddev.site' --title='WordPress' --admin_user='admin' 
---admin_password='admin123' --admin_email='admin@admin.com'
+     ddev exec wp core install --url='https://your-project-name.ddev.site' --title='WordPress' --admin_user='****' 
+--admin_password='****' --admin_email='admin@admin.com'
 ````
 
 #### Install your plugin
@@ -210,7 +210,7 @@ git clone git@github.com:your-git-repo/your-plugin-repo.git ./
 
 ## Contribute
 
-Anyone is welcome to submit a PR to this repo.
+Anyone is welcome to submit a pull request to this repo.
 
 
 **Contributed and maintained by [julienloizelet](https://github.com/julienloizelet)**
