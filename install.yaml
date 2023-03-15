@@ -5,4 +5,5 @@ project_files:
 - commands
 - homeadditions
 - okaeli-add-on
+- redis/redis.conf
 - web-build

@@ -11,6 +11,16 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+## [0.0.9](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.9) - 2023-03-15
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.8...v0.0.9)
+
+### Added
+
+- Add redis configuration override to use `noeviction` as `maxmemory-policy`
+
+---
+
+
 ## [0.0.8](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.8) - 2023-03-15
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.7...v0.0.8)
 
