@@ -1,5 +1,6 @@
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
 ARG BASE_IMAGE
 FROM $BASE_IMAGE
 
