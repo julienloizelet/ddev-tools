@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/) and th
 
 ## Public API
 
-The [public API](https://semver.org/spec/v2.0.0.html#spec-item-1) for this project is defined by the `install.yaml`
+The [public API](https://semver.org/spec/v2.0.0.html#spec-item-1) of this project is defined by the `install.yaml`
 file and `project_files` listed in the `install.yaml` file.
 
 ------
