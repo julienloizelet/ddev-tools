@@ -1,6 +1,10 @@
 <?php declare(strict_types=1);
-#ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+/**
+ * #ddev-generated
+ * Remove the line above if you don't want this file to be overwritten
+ * when you run ddev get julienloizelet/ddev-tools
+ *
+ */
 /**
  *
  * Run a specific cron job from browser (development only, do not use in production)

@@ -11,8 +11,20 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+## [0.0.8](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.8) - 2023-03-15
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.7...v0.0.8)
+
+### Changed
+
+- Update ddev signature in all files
+
+---
+
+
 ## [0.0.7](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.7) - 2023-03-14
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.6...v0.0.7)
+
+### Fixed
 
 - Fix `check-ddev-version` feature
 
@@ -22,12 +34,16 @@ file and `project_files` listed in the `install.yaml` file.
 ## [0.0.6](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.6) - 2023-03-14
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.5...v0.0.6)
 
+### Fixed
+
 - Fix `varnish-profile.xml` file
 
 ---
 
 ## [0.0.5](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.5) - 2023-03-14
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.4...v0.0.5)
+
+### Changed
 
 - Add ddev signature in all files
 
@@ -36,6 +52,8 @@ file and `project_files` listed in the `install.yaml` file.
 ## [0.0.4](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.4) - 2023-03-14
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.3...v0.0.4)
 
+### Changed
+
 - Refactor all files
 
 ---
@@ -43,11 +61,15 @@ file and `project_files` listed in the `install.yaml` file.
 ## [0.0.3](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.3) - 2023-03-14
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.2...v0.0.3)
 
+### Removed
+
 - Remove useless files
 
 
 ## [0.0.2](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.2) - 2023-03-13
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.1...v0.0.2)
+
+### Added
 
 - Add empty `varnish` folder for Magento 2
 

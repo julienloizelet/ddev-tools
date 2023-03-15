@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
 ## Description: Download a MaxMind database using a LICENSE KEY
 ## Usage: maxmind-download license_key db_name destination
 ## Example: "ddev maxmind-download Vj***4gs54 GeoLite2-Country /var/www/html"

@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
 ## Description: Run PHPCS for some folder
 ## Usage: phpcs bin_source folder standard
 ## Example: "ddev phpcs ./my-own-modules/my-module/vendor/bin/phpcs my-own-modules/my-module PSR2"

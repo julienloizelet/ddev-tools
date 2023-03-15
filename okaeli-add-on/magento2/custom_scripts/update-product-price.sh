@@ -1,7 +1,10 @@
 #!/bin/bash
-# UPDATE PRODUCT PRICE REST API
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
+# UPDATE PRODUCT PRICE REST API
 TOKEN=
 BASE_URL=$1
 SKU=$2

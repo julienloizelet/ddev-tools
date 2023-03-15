@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
 ## Description: Run PHPCS for some folder
 ## Usage: phpcs folder
 ## Example: "ddev phpcs my-own-modules/my-module --ignore="*/node_modules/*""

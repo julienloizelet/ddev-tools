@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
 ## Description: Find IP of a container or host
 ## Usage: find-ip serviceName
 ## Example: "ddev find-ip memcached"

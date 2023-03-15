@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
 ## Description: Replace ACL with some IP
 ## Usage: replace-acl IP
 ## Example: "ddev replace-acl 172.21.0.12"

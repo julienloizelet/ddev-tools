@@ -110,6 +110,7 @@ You will need your Magento 2 credentials to install the source code.
                            --currency=USD \
                            --timezone=America/Chicago \
                            --use-rewrites=1 \
+                           --search-engine=elasticsearch7 \
                            --elasticsearch-host=elasticsearch
 
 This should take ages.
@@ -118,6 +119,7 @@ This should take ages.
 
     ddev magento config:set admin/security/password_is_forced 0
     ddev magento config:set admin/security/password_lifetime 0
+    ddev magento module:disable Magento_AdminAdobeImsTwoFactorAuth (Magento >= 2.4.6 only)
     ddev magento module:disable Magento_TwoFactorAuth
     ddev magento indexer:reindex
     ddev magento c:c

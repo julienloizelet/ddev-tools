@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
 ## Description: Override the nginx conf by a specific one
 ## Usage: nginx-config <conf_file>
 ## <conf_file>: Relative path from the .ddev folder

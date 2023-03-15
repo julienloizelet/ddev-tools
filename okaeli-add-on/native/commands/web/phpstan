@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten when you run ddev get
+# Remove the line above if you don't want this file to be overwritten
+# when you run ddev get julienloizelet/ddev-tools
+
 ## Description: Run PHPSTAN for some folder
 ## Usage: phpstan phpstan_root_source ruleset_folder code_folder
 ## Example: "ddev phpstan my-own-modules/my-module"
