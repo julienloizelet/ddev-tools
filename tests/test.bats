@@ -3,7 +3,7 @@ setup() {
   export DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )/.."
   export TESTDIR=~/tmp/ddev-add-on-test
   mkdir -p $TESTDIR
-  export PROJNAME=ddev-playwright-test
+  export PROJNAME=ddev-tools-test
   export DDEV_NON_INTERACTIVE=true
   ddev delete -Oy ${PROJNAME} >/dev/null 2>&1 || true
   cd "${TESTDIR}"
