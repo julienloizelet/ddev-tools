@@ -11,7 +11,7 @@ source "${CURRENT_DIR}/bash/helpers/colors.sh";
 
 function show_banner() {
     echo -e "${bldblu}=========================================================="
-    echo -e "> Magento 2 DDEV environment started successfully. "
+    echo -e "> DDEV environment started successfully. "
     echo -e "==========================================================${txtrst}"
 }
 show_banner

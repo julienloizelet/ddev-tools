@@ -11,6 +11,21 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+## [0.0.10](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.10) - 2023-03-16
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.9...v0.0.10)
+
+
+### Changed
+
+- List each file individually in `project_files`
+
+### Added
+
+- Add `post_install_actions` to copy some DDEV project type files 
+
+---
+
+
 ## [0.0.9](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.9) - 2023-03-15
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.8...v0.0.9)
 

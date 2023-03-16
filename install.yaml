@@ -2,8 +2,39 @@ name: okaeli-add-on
 
 # list of files and directories listed that are copied into project .ddev directory
 project_files:
-- commands
-- homeadditions
-- okaeli-add-on
+- commands/host/find-ip
+- commands/host/nginx-config
+- commands/varnish/reload-vcl
+- commands/varnish/replace-acl
+- commands/web/maxmind-download
+- homeadditions/DDEV_EXPECTED_VERSION.txt
+- config.check-ddev-version.yaml
+- okaeli-add-on/common/custom_files/phpinfo.php
+- okaeli-add-on/common/custom_scripts/bash/helpers/colors.sh
+- okaeli-add-on/common/custom_scripts/check-ddev-version.sh
+- okaeli-add-on/common/custom_scripts/post-install.sh
+- okaeli-add-on/magento2/commands/web/cron
+- okaeli-add-on/magento2/commands/web/phpcbf
+- okaeli-add-on/magento2/commands/web/phpcs
+- okaeli-add-on/magento2/commands/web/phpmd
+- okaeli-add-on/magento2/commands/web/phpstan
+- okaeli-add-on/magento2/commands/web/phpunit
+- okaeli-add-on/magento2/custom_files/default.vcl
+- okaeli-add-on/magento2/custom_files/docker-compose.okaeli-elasticsearch.yaml
+- okaeli-add-on/magento2/custom_files/phpstan.neon
+- okaeli-add-on/magento2/custom_files/varnish-profile.xml
+- okaeli-add-on/magento2/custom_scripts/cronLaunch.php
+- okaeli-add-on/magento2/custom_scripts/update-product-price.sh
+- okaeli-add-on/native/commands/web/phpcbf
+- okaeli-add-on/native/commands/web/phpcs
+- okaeli-add-on/native/commands/web/phpcsfixer
+- okaeli-add-on/native/commands/web/phpmd
+- okaeli-add-on/native/commands/web/phpstan
+- okaeli-add-on/native/commands/web/psalm
 - redis/redis.conf
-- web-build
+- web-build/Dockerfile
+
+post_install_actions:
+   - |
+    chmod +x okaeli-add-on/common/custom_scripts/post-install.sh
+    ./okaeli-add-on/common/custom_scripts/post-install.sh

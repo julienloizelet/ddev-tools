@@ -178,7 +178,6 @@ ddev config --project-type=wordpress --project-name=your-project-name
 
 ```bash
 ddev get julienloizelet/ddev-tools
-cp -r .ddev/okaeli-add-on/wordpress/commands/* .ddev/commands
 ddev start
 ```
 
