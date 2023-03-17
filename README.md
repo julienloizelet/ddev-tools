@@ -197,8 +197,7 @@ ddev wp core download
 #### Set up WordPress
 
 ```bash
-     ddev exec wp core install --url='https://your-project-name.ddev.site' --title='WordPress' --admin_user='****' 
---admin_password='****' --admin_email='admin@admin.com'
+     ddev exec wp core install --url='https://your-project-name.ddev.site' --title='WordPress' --admin_user='****' --admin_password='****' --admin_email='admin@admin.com'
 ````
 
 #### Install your plugin

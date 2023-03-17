@@ -1,6 +1,6 @@
 #ddev-generated
-# Remove the line above if you don't want this file to be overwritten
-# when you run ddev get julienloizelet/ddev-tools
+# ddev manages this file and may delete or overwrite it unless the above line is removed.
+# This file comes from "ddev get julienloizelet/ddev-tools"
 
 # VCL version 5.0 is not supported so it should be 4.0 even though actually used Varnish version is 6
 vcl 4.0;
