@@ -8,6 +8,7 @@
 /**
  *
  * Run a specific cron job from browser (development only, do not use in production)
+ * This script should be copied in the pub folder of your Magento 2 sources
  * @see https://magento.stackexchange.com/a/273142/50208
  * @example : https://my.magento2.site/cronLaunch.php?job=VendorName\ModuleName\CronClass
  *

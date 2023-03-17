@@ -55,3 +55,5 @@ txtrst='\033[0m'    # Text Reset
 # Emojii
 check_mark='\xE2\x9C\x94'
 cross_mark='\xE2\x9D\x8C'
+thumb_up='\U0001F44D'
+arrow_right='\u2192'

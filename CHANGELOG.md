@@ -11,6 +11,19 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+
+## [0.0.11](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.11) - 2023-03-17
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.10...v0.0.11)
+
+
+### Changed
+
+- Update `post_install_actions` script
+
+
+---
+
+
 ## [0.0.10](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.10) - 2023-03-16
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.9...v0.0.10)
 
