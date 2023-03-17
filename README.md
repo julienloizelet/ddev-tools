@@ -1,6 +1,7 @@
-
-
 # DDEV tools
+
+![project is maintained](https://img.shields.io/maintenance/yes/2023.svg)
+[![Version](https://img.shields.io/github/v/release/julienloizelet/ddev-tools?include_prereleases)](https://github.com/julienloizelet/ddev-tools/releases)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -29,9 +30,14 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Requirements
+
+This add-on depends on [DDEV](https://ddev.readthedocs.io/en/stable/).
+
+
 ## Introduction
 
-The purpose of this [DDEV](https://ddev.readthedocs.io/en/stable/) add-on is to share my development DDEV's tools.
+The purpose of this DDEV add-on is to share my development DDEV's tools.
 
 I mainly use it to work on Magento 2 modules, WordPress plugins and other PHP projects.
 
@@ -80,7 +86,6 @@ ddev config --project-type=magento2 --project-name=your-project-name --php-versi
 
 ```bash
 ddev get julienloizelet/ddev-tools
-cp -r .ddev/okaeli-add-on/magento2/commands/* .ddev/commands
 ddev get ddev/ddev-elasticsearch
 ddev start
 ```
@@ -211,7 +216,7 @@ git clone git@github.com:your-git-repo/your-plugin-repo.git ./
 
 ## Contribute
 
-Anyone is welcome to submit a pull request to this repo.
+Anyone is welcome to submit a pull request to this repository.
 
 
 **Contributed and maintained by [julienloizelet](https://github.com/julienloizelet)**
