@@ -16,6 +16,9 @@ on:
         description: Debug with tmate
         default: false
 
+permissions:
+  contents: write
+
 defaults:
   run:
     shell: bash
@@ -88,5 +91,8 @@ jobs:
     # GitHub from turning off tests after 60 days
     - uses: gautamkrishnar/keepalive-workflow@v1
       if: matrix.ddev_version == 'stable'
+      with:
+        commit_message: "chore(*): Automated commit to keep the repository active"
+        time_elapsed: 55
 
 
