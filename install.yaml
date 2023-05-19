@@ -31,6 +31,9 @@ project_files:
 - okaeli-add-on/native/commands/web/phpmd
 - okaeli-add-on/native/commands/web/phpstan
 - okaeli-add-on/native/commands/web/psalm
+- okaeli-add-on/wordpress/custom_files/.htaccess-multisite-subdomain
+- okaeli-add-on/wordpress/custom_files/.htaccess-multisite-subfolder
+- okaeli-add-on/wordpress/custom_files/multisite-config.php
 - redis/redis.conf
 - web-build/Dockerfile
 

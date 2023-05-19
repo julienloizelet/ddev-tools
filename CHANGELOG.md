@@ -11,6 +11,17 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+## [1.0.1](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.0.1) - 2023-05-19
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.0.0...v1.0.1)
+
+
+### Fixed
+
+- Fix missing WordPress files path in `install.yaml`
+
+
+---
+
 ## [1.0.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.0.0) - 2023-05-19
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.11...v1.0.0)
 
