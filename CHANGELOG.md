@@ -11,6 +11,17 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+## [1.0.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.0.0) - 2023-05-19
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.11...v1.0.0)
+
+
+### Added
+
+- Add WordPress multisite files
+
+
+---
+
 
 ## [0.0.11](https://github.com/julienloizelet/ddev-tools/releases/tag/v0.0.11) - 2023-03-17
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v0.0.10...v0.0.11)
