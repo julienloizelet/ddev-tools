@@ -11,6 +11,14 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+## [1.1.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.1.0) - 2023-08-01
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.0.1...v1.1.0)
+
+
+### Changed
+
+- Update expected version of DDEv to `1.22.0`
+
 ## [1.0.1](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.0.1) - 2023-05-19
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.0.0...v1.0.1)
 
