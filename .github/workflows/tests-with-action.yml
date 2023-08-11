@@ -19,12 +19,6 @@ on:
 permissions:
   contents: write
 
-defaults:
-  run:
-    shell: bash
-
-env:
-  DDEV_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   tests-with-action:
@@ -42,7 +36,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - uses: julienloizelet/ddev-add-on-test@v0.2.0
+    - uses: julienloizelet/ddev-add-on-test@feat-keepalive
       with:
         ddev_version: ${{ matrix.ddev_version }}
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -54,6 +48,6 @@ jobs:
       if: matrix.ddev_version == 'stable'
       with:
         commit_message: "chore(*): Automated commit to keep the repository active"
-        time_elapsed: 1
+        time_elapsed: 0
 
 
