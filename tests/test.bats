@@ -22,7 +22,7 @@ teardown() {
   set -eu -o pipefail
   cd ${TESTDIR}
 
-  echo "# TESTING ACTION" >&3
+  echo "# TESTING ACTION with PR" >&3
   echo "# ddev get ${DIR} with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
   ddev get ${DIR}
   ddev restart
