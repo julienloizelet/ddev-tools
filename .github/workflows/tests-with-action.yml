@@ -22,9 +22,6 @@ permissions:
 
 jobs:
   tests-with-action:
-    defaults:
-      run:
-        shell: bash
 
     strategy:
       matrix:
@@ -41,5 +38,6 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         debug_enabled: ${{ github.event.inputs.debug_enabled }}
         addon_repository: ${{ env.GITHUB_REPOSITORY }}
+        keepalive_time_elapsed: 0
 
 
