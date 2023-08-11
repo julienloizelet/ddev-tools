@@ -42,12 +42,4 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         debug_enabled: ${{ github.event.inputs.debug_enabled }}
 
-    # keepalive-workflow adds a dummy commit if there's no other action here, keeps
-    # GitHub from turning off tests after 60 days
-    - uses: gautamkrishnar/keepalive-workflow@v1
-      if: matrix.ddev_version == 'stable'
-      with:
-        commit_message: "chore(*): Automated commit to keep the repository active"
-        time_elapsed: 0
-
 
