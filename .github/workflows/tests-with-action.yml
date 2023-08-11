@@ -38,6 +38,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         debug_enabled: ${{ github.event.inputs.debug_enabled }}
         addon_repository: ${{ env.GITHUB_REPOSITORY }}
+        addon_ref: ${{ env.GITHUB_REF }}
         keepalive_time_elapsed: 0
 
 
