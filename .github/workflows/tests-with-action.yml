@@ -34,12 +34,12 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - uses: actions/checkout@v3
 
     - uses: julienloizelet/ddev-add-on-test@feat-keepalive
       with:
         ddev_version: ${{ matrix.ddev_version }}
         token: ${{ secrets.GITHUB_TOKEN }}
         debug_enabled: ${{ github.event.inputs.debug_enabled }}
+        addon_repository: ${{ env.GITHUB_REPOSITORY }}
 
 
