@@ -1,4 +1,4 @@
-name: okaeli-add-on
+name: okaeli-tools
 
 # list of files and directories listed that are copied into project .ddev directory
 project_files:
@@ -24,6 +24,7 @@ project_files:
 - okaeli-add-on/magento2/custom_files/phpstan.neon
 - okaeli-add-on/magento2/custom_files/varnish-profile.xml
 - okaeli-add-on/magento2/custom_scripts/cronLaunch.php
+- okaeli-add-on/magento2/custom_scripts/runAction.php
 - okaeli-add-on/magento2/custom_scripts/update-product-price.sh
 - okaeli-add-on/native/commands/web/phpcbf
 - okaeli-add-on/native/commands/web/phpcs

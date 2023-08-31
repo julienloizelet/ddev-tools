@@ -32,7 +32,7 @@ teardown() {
   set -eu -o pipefail
   cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
   echo "# ddev get julienloizelet/ddev-tools with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
-  ddev get julienloizelet/ddev-add-on
+  ddev get julienloizelet/ddev-tools
   ddev restart >/dev/null
 
   echo "# ddev get ${DIR} with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3

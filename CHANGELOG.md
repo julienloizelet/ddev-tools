@@ -11,6 +11,17 @@ file and `project_files` listed in the `install.yaml` file.
 
 ------
 
+## [1.2.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.2.0) - 2023-08-31
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.1.0...v1.2.0)
+
+
+### Added
+
+- Add `runAction.php` script for Magento 2
+
+
+---
+
 ## [1.1.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.1.0) - 2023-08-01
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.0.1...v1.1.0)
 
