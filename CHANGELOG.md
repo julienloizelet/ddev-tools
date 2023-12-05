@@ -17,7 +17,7 @@ file and `project_files` listed in the `install.yaml` file.
 
 ### Changed
 
-- Update expected version of DDEv to `1.22.5`
+- Update expected version of DDEV to `1.22.5`
 
 ---
 
