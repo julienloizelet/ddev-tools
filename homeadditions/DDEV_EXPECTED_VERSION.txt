@@ -2,4 +2,4 @@
 # ddev manages this file and may delete or overwrite it unless the above line is removed.
 # This file comes from "ddev get julienloizelet/ddev-tools"
 
-EXPECTED=1.22.0
+EXPECTED=1.22.5
