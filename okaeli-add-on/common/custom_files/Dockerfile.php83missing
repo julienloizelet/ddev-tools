@@ -1,0 +1,27 @@
+#ddev-generated
+# ddev manages this file and may delete or overwrite it unless the above line is removed.
+# This file comes from "ddev get julienloizelet/ddev-tools"
+ARG BASE_IMAGE
+FROM $BASE_IMAGE
+SHELL ["/bin/bash", "-c"]
+RUN disable_xdebug
+# Install the needed development packages
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -o Dpkg::Options::="--force-confnew" --no-install-recommends --no-install-suggests build-essential php-pear php8.3-dev zlib1g-dev libmemcached-dev
+
+# X-debug
+# The "echo" below just forces accepting the "automatic" configuration, the same as hitting <RETURN>
+RUN echo | pecl install xdebug
+# Assuming the extension is already installed in web container in php8.2 we can just copy its configuration
+RUN cp /etc/php/8.2/mods-available/xdebug.ini /etc/php/8.3/mods-available/
+
+# Redis
+RUN echo | pecl install redis
+RUN cp /etc/php/8.2/mods-available/redis.ini /etc/php/8.3/mods-available/
+RUN ln -s "/etc/php/8.3/mods-available/redis.ini" "/etc/php/8.3/cli/conf.d/20-redis.ini"
+
+# Memcached
+RUN echo | pecl install memcached
+RUN cp /etc/php/8.2/mods-available/memcached.ini /etc/php/8.3/mods-available/
+RUN ln -s "/etc/php/8.3/mods-available/memcached.ini" "/etc/php/8.3/cli/conf.d/20-memcached.ini"
+
+

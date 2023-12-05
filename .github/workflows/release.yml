@@ -2,8 +2,6 @@ name: Create Release
 # example: gh workflow run release.yml -f tag_name=v1.1.4 -f draft=true
 on:
   workflow_dispatch:
-    branches:
-      - main
     inputs:
       tag_name:
         type: string
@@ -48,7 +46,7 @@ jobs:
       - name: Check version ${{ env.VERSION_NUMBER }} consistency in files
         # Check CHANGELOG.md
         run: |
-          
+
           # Check top ## [VERSION_NUMBER](GITHUB_URL/releases/tag/vVERSION_NUMBER) - yyyy-mm-dd in CHANGELOG.md
           CURRENT_DATE=$(date +'%Y-%m-%d')
           echo $CURRENT_DATE
@@ -61,7 +59,7 @@ jobs:
               echo "CHANGELOG VERSION KO"
               exit 1
           fi
-          
+
           # Check top [_Compare with previous release_](GITHUB_URL/compare/vLAST_TAG...vVERSION_NUMBER) in CHANGELOG.md
           if [[ ${{ github.event.inputs.first-release }} != "true" ]]
           then
