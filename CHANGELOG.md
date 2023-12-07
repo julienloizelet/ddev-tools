@@ -11,13 +11,22 @@ file and `project_files` listed in the `install.yaml` file.
 
 ---
 
+## [1.5.1](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.5.1) - 2023-12-07
+
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.5.0...v1.5.1)
+
+### Fixed
+
+- Fix missing `config.php83missing.yaml` in `install.yaml`
+
+
 ## [1.5.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.5.0) - 2023-12-06
 
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.4.0...v1.5.0)
 
 ### Added
 
-- - Add `config.php83missing.yaml` file for temporary missing PHP 8.3 extensions
+- Add `config.php83missing.yaml` file for temporary missing PHP 8.3 extensions
 
 ---
 

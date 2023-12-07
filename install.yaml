@@ -12,6 +12,7 @@ project_files:
   - okaeli-add-on/common/custom_files/phpinfo.php
   - okaeli-add-on/common/custom_files/Dockerfile.memcached320
   - okaeli-add-on/common/custom_files/Dockerfile.php83missing
+  - okaeli-add-on/common/custom_files/config.php83missing.yaml
   - okaeli-add-on/common/custom_scripts/bash/helpers/colors.sh
   - okaeli-add-on/common/custom_scripts/check-ddev-version.sh
   - okaeli-add-on/common/custom_scripts/post-install.sh
