@@ -12,5 +12,5 @@ ROOT=${1:-.}
 RULESET_PATH=${2:-phpstan.neon}
 MODULE_SOURCE=${3:-src}
 #
-cd $SOURCE &&
-/usr/bin/php $ROOT/vendor/bin/phpstan analyse --level 1 --no-progress --memory-limit=4G -c $ROOT/$RULESET_PATH $MODULE_SOURCE
+cd "$SOURCE" &&
+/usr/bin/php "$ROOT"/vendor/bin/phpstan analyse --level 1 --no-progress --memory-limit=4G -c "$ROOT"/"$RULESET_PATH" "$MODULE_SOURCE"

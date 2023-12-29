@@ -16,7 +16,7 @@ DB_NAME=$2
 DESTINATION=$3
 
 
-if [ $LICENSE_KEY == "DEFAULT" ];
+if [ "$LICENSE_KEY" == "DEFAULT" ];
 then
   echo "This script will download ${DB_NAME}.tar.gz and ${DB_NAME}.tar.gz.sha256.txt from https://github.com/julienloizelet/ddev-php/releases/download/v1.5.0"
   curl -fL "https://github.com/julienloizelet/ddev-php/releases/download/v1.5.0/${DB_NAME}.tar.gz" -o "${DESTINATION}/${DB_NAME}.tar.gz" &&

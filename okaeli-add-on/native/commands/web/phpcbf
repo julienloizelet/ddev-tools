@@ -12,4 +12,4 @@ PHPCBF_SOURCE=${1:-./}
 MODULE_SOURCE=${2:-my-own-modules/my-module}
 STANDARD=${3:-PSR12}
 
-/usr/bin/php $PHPCBF_SOURCE/vendor/bin/phpcbf --standard=$STANDARD $MODULE_SOURCE
+/usr/bin/php "$PHPCBF_SOURCE"/vendor/bin/phpcbf --standard="$STANDARD" "$MODULE_SOURCE"

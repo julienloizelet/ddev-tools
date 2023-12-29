@@ -13,4 +13,4 @@ PHPCS_SOURCE=${1:-./}
 MODULE_SOURCE=${2:-my-own-modules/my-module}
 STANDARD=${3:-PSR12}
 
-/usr/bin/php $PHPCS_SOURCE/vendor/bin/phpcs  --standard=$STANDARD $MODULE_SOURCE
+/usr/bin/php "$PHPCS_SOURCE"/vendor/bin/phpcs  --standard="$STANDARD" "$MODULE_SOURCE"

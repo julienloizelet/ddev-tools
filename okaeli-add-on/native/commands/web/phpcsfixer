@@ -12,5 +12,5 @@
 SOURCE=${1:-my-own-modules/my-module}
 FIXER=${2:-tools/php-cs-fixer}
 
-cd $SOURCE &&
-/usr/bin/php  $FIXER/vendor/bin/php-cs-fixer fix
+cd "$SOURCE" &&
+/usr/bin/php  "$FIXER"/vendor/bin/php-cs-fixer fix

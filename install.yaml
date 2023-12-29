@@ -8,7 +8,6 @@ project_files:
   - commands/varnish/replace-acl
   - commands/web/maxmind-download
   - homeadditions/DDEV_EXPECTED_VERSION.txt
-  - config.check-ddev-version.yaml
   - okaeli-add-on/common/custom_files/phpinfo.php
   - okaeli-add-on/common/custom_files/Dockerfile.memcached320
   - okaeli-add-on/common/custom_files/Dockerfile.php83missing

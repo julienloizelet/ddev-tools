@@ -11,6 +11,20 @@ file and `project_files` listed in the `install.yaml` file.
 
 ---
 
+## [1.6.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.6.0) - 2023-12-29
+
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.5.1...v1.6.0)
+
+### Removed
+
+- Removed `check-ddev-version` feature
+
+
+### Fixed
+
+- Fix bash scripts as expected by shellcheck
+
+
 ## [1.5.1](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.5.1) - 2023-12-07
 
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.5.0...v1.5.1)

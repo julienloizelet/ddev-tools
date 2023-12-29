@@ -12,4 +12,4 @@
 PSALM_SOURCE=${1:-./}
 CONFIG_SOURCE=${2:-}
 
-/usr/bin/php $PSALM_SOURCE/vendor/bin/psalm  --root=$CONFIG_SOURCE  --show-info=true
+/usr/bin/php "$PSALM_SOURCE"/vendor/bin/psalm  --root="$CONFIG_SOURCE"  --show-info=true

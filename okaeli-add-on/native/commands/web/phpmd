@@ -14,4 +14,4 @@ MODULE_SOURCE=${3:-src}
 FORMAT=${4:-text}
 
 
-/usr/bin/php $ROOT/vendor/bin/phpmd  $ROOT/$MODULE_SOURCE $FORMAT $ROOT/$RULESET_PATH
+/usr/bin/php "$ROOT"/vendor/bin/phpmd  "$ROOT"/"$MODULE_SOURCE" "$FORMAT" "$ROOT"/"$RULESET_PATH"
