@@ -11,6 +11,16 @@ file and `project_files` listed in the `install.yaml` file.
 
 ---
 
+## [1.7.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.7.0) - 2024-01-25
+
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.6.0...v1.7.0)
+
+### Removed
+
+- Removed `--ignore-annotations` from the `phpcs` Magento 2 command
+
+---
+
 ## [1.6.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.6.0) - 2023-12-29
 
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.5.1...v1.6.0)
