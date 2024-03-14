@@ -2,7 +2,7 @@ name: Keep Alive
 on:
 
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '0 3 * * 4'
 
 permissions:
   actions: write
@@ -21,4 +21,4 @@ jobs:
       # keepalive-workflow keeps GitHub from turning off tests after 60 days
       - uses: gautamkrishnar/keepalive-workflow@v2
         with:
-          time_elapsed: 0
+          time_elapsed: 30
