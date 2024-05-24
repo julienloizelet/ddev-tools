@@ -5,8 +5,7 @@ on:
     branches:
       - main
   schedule:
-    # every 2 minutes
-    - cron: '*/2 * * * *'
+    - cron: '0 3 * * 4'
 
 permissions:
   actions: write
