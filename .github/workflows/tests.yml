@@ -7,8 +7,7 @@ on:
       - '**.md'
 
   schedule:
-    # Every 10 minutes
-    - cron: '*/10 * * * *'
+    - cron: '0 6 * * *'
 
   workflow_dispatch:
     inputs:
@@ -32,7 +31,7 @@ jobs:
 
     steps:
 
-      - uses: ddev/ddev-add-on-test@4158e3b82aec5b96930d7d87f3f848af3f02d06c
+      - uses: ddev/ddev-add-on-test@v2
         with:
           ddev_version: ${{ matrix.ddev_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
