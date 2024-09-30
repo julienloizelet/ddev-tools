@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: julienloizelet/ddev-add-on-test@53b8f2c7193232cf472f91323f4ed91da99316df
+      - uses: julienloizelet/ddev-add-on-test@ecf1a779c2cfa8cbe16cc981af00682107a76c5a
         with:
           ddev_version: ${{ matrix.ddev_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
