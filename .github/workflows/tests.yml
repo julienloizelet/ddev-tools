@@ -36,6 +36,7 @@ jobs:
           debug_enabled: ${{ github.event.inputs.debug_enabled }}
           addon_repository: ${{ env.GITHUB_REPOSITORY }}
           addon_ref: ${{ env.GITHUB_REF }}
+          test_command: "bats -v tests --filter-tags '!release'"
 
       - uses: mxschmitt/action-tmate@v3
         with:
