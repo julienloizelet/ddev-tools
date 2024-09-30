@@ -29,14 +29,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: julienloizelet/ddev-add-on-test@7a5a96ac305884a2f62220d625983d1363a07ebd
+      - uses: julienloizelet/ddev-add-on-test@b42c1cfc634b625ab31c25bebc7f10770ca6e853
         with:
           ddev_version: ${{ matrix.ddev_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
           debug_enabled: ${{ github.event.inputs.debug_enabled }}
           addon_repository: ${{ env.GITHUB_REPOSITORY }}
           addon_ref: ${{ env.GITHUB_REF }}
-          test_command: "bats -v tests --filter-tags '!release'"
 
       - uses: mxschmitt/action-tmate@v3
         with:
