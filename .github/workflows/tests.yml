@@ -2,12 +2,12 @@ name: tests
 on:
   pull_request:
   push:
-    branches: [ main ]
+    branches: [main]
     paths-ignore:
-      - '**.md'
+      - "**.md"
 
   schedule:
-    - cron: '0 6 * * *'
+    - cron: "0 6 * * *"
 
   workflow_dispatch:
     inputs:
@@ -21,7 +21,6 @@ permissions:
 
 jobs:
   tests:
-
     strategy:
       matrix:
         ddev_version: [stable, HEAD]
@@ -30,8 +29,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      - uses: ddev/ddev-add-on-test@v2
+      - uses: julienloizelet/ddev-add-on-test@7a5a96ac305884a2f62220d625983d1363a07ebd
         with:
           ddev_version: ${{ matrix.ddev_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
