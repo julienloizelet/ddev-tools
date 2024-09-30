@@ -29,10 +29,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: julienloizelet/ddev-add-on-test@ecf1a779c2cfa8cbe16cc981af00682107a76c5a
+      - uses: julienloizelet/ddev-add-on-test@53913a3b03dbf06ed85f72684aefa4d7cba28ca9
         with:
           ddev_version: ${{ matrix.ddev_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          debug_enabled: "true"
+          debug_enabled: ${{ github.event.inputs.debug_enabled }}
           addon_repository: ${{ env.GITHUB_REPOSITORY }}
           addon_ref: ${{ env.GITHUB_REF }}
