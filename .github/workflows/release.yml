@@ -7,6 +7,9 @@ on:
         type: string
         required: true
 
+env:
+  TAG_NAME: ${{ github.event.inputs.tag_name }}
+
 jobs:
   create-release:
     name: Create release
@@ -17,9 +20,6 @@ jobs:
     outputs:
       version_number: ${{ steps.set-version-number.outputs.version_number }}
       major_tag: ${{ steps.set-major-tag.outputs.major_tag }}
-
-    env:
-      TAG_NAME: ${{ github.event.inputs.tag_name }}
 
     steps:
       - name: Check naming convention
@@ -39,7 +39,7 @@ jobs:
       - name: Set major tag with v
         id: set-major-tag
         run: |
-          echo "major_tag=$(echo v${{ steps.set-version-number.outputs.version_number }} | cut -d. -f1)" >> $GITHUB_OUTPUT
+          echo "major_tag=$(echo ${{ env.TAG_NAME }} | cut -d. -f1)" >> $GITHUB_OUTPUT
 
       - name: Clone sources
         uses: actions/checkout@v4
@@ -114,7 +114,7 @@ jobs:
           fetch-depth: 0
 
       - name: Move or create the major tag
-        run: git tag -f ${{ needs.create-release.outputs.major_tag }} ${{ needs.create-release.outputs.version_number }}
+        run: git tag -f ${{ needs.create-release.outputs.major_tag }} ${{ env.TAG_NAME }}
 
       - name: Push the major tag
         run: git push origin ${{ needs.create-release.outputs.major_tag }} --force
