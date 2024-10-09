@@ -11,6 +11,16 @@ file and `project_files` listed in the `install.yaml` file.
 
 ---
 
+## [1.7.1](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.7.1) - 2024-10-09
+
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.7.0...v1.7.1)
+
+### Fixed
+
+- Fix nothing: this release is only for test purpose
+
+---
+
 ## [1.7.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.7.0) - 2024-01-25
 
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.6.0...v1.7.0)
@@ -29,11 +39,9 @@ file and `project_files` listed in the `install.yaml` file.
 
 - Removed `check-ddev-version` feature
 
-
 ### Fixed
 
 - Fix bash scripts as expected by shellcheck
-
 
 ## [1.5.1](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.5.1) - 2023-12-07
 
@@ -42,7 +50,6 @@ file and `project_files` listed in the `install.yaml` file.
 ### Fixed
 
 - Fix missing `config.php83missing.yaml` in `install.yaml`
-
 
 ## [1.5.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.5.0) - 2023-12-06
 
