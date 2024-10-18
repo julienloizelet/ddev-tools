@@ -11,6 +11,16 @@ file and `project_files` listed in the `install.yaml` file.
 
 ---
 
+## [1.7.4](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.7.4) - 2024-10-18
+
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.7.3...v1.7.4)
+
+### Fixed
+
+- Add missing `#ddev-generated` comment in `config.php83missing.yaml` file
+
+---
+
 ## [1.7.3](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.7.3) - 2024-10-09
 
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.7.2...v1.7.3)
@@ -40,6 +50,7 @@ file and `project_files` listed in the `install.yaml` file.
 - Fix nothing: this release is only for test purpose
 
 ---
+
 
 ## [1.7.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.7.0) - 2024-01-25
 

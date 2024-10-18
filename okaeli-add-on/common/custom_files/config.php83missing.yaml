@@ -1,1 +1,2 @@
+#ddev-generated
 webimage_extra_packages: [php8.3-xdebug, php8.3-memcached, php8.3-redis]
