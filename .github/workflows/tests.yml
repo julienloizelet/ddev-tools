@@ -2,7 +2,7 @@ name: tests
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, feat/test-action-on-push]
     paths-ignore:
       - "**.md"
 
@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: julienloizelet/ddev-add-on-test@53913a3b03dbf06ed85f72684aefa4d7cba28ca9
+      - uses: julienloizelet/ddev-add-on-test@20a7c1489181dae10ce6af9b0680899e2f33c8a2
         with:
           ddev_version: ${{ matrix.ddev_version }}
           token: ${{ secrets.GITHUB_TOKEN }}
