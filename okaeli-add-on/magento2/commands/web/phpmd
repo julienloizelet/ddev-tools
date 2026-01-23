@@ -8,5 +8,11 @@
 ## Usage: phpmd folder
 ## Example: "ddev phpmd --exclude "node_modules" my-own-modules/my-module"
 
+RULESET="dev/tests/static/testsuite/Magento/Test/Php/_files/phpmd/ruleset.xml"
 
-/usr/bin/php ./vendor/bin/phpmd  "$@" text dev/tests/static/testsuite/Magento/Test/Php/_files/phpmd/ruleset.xml
+# Detect PHPMD 3.x (Symfony Console CLI with 'analyze' command)
+if /usr/bin/php ./vendor/bin/phpmd 2>&1 | grep -q "analyze"; then
+  /usr/bin/php ./vendor/bin/phpmd analyze "$@" --format=text --ruleset="$RULESET"
+else
+  /usr/bin/php ./vendor/bin/phpmd "$@" text "$RULESET"
+fi

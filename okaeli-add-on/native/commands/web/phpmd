@@ -14,4 +14,9 @@ MODULE_SOURCE=${3:-src}
 FORMAT=${4:-text}
 
 
-/usr/bin/php "$ROOT"/vendor/bin/phpmd  "$ROOT"/"$MODULE_SOURCE" "$FORMAT" "$ROOT"/"$RULESET_PATH"
+# Detect PHPMD 3.x (Symfony Console CLI with 'analyze' command)
+if /usr/bin/php "$ROOT"/vendor/bin/phpmd 2>&1 | grep -q "analyze"; then
+  /usr/bin/php "$ROOT"/vendor/bin/phpmd analyze "$ROOT"/"$MODULE_SOURCE" --format="$FORMAT" --ruleset="$ROOT"/"$RULESET_PATH"
+else
+  /usr/bin/php "$ROOT"/vendor/bin/phpmd "$ROOT"/"$MODULE_SOURCE" "$FORMAT" "$ROOT"/"$RULESET_PATH"
+fi

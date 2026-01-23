@@ -14,7 +14,7 @@ jobs:
     steps:
 
       - name: Clone sources
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
           path: extension
 
@@ -33,12 +33,3 @@ jobs:
           gem install awesome_bot
           cd extension
           awesome_bot --files README.md --allow-dupe --allow 401 --skip-save-results --white-list repo.magento.com,ddev.site --base-url http://localhost:8080/
-
-      - name: Generate table of contents
-        uses: technote-space/toc-generator@v4
-        with:
-          MAX_HEADER_LEVEL: 5
-          COMMIT_NAME: Okaeli Dev Bot
-          TARGET_PATHS: 'README.md'
-          CHECK_ONLY_DEFAULT_BRANCH: true
-          CREATE_PR: true

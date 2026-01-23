@@ -11,6 +11,16 @@ file and `project_files` listed in the `install.yaml` file.
 
 ---
 
+## [1.8.0](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.8.0) - 2026-01-23
+
+[_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.7.4...v1.8.0)
+
+### Changed
+
+- Handle `phpmd` command for `phpmd` using `symfony/console` 
+
+---
+
 ## [1.7.4](https://github.com/julienloizelet/ddev-tools/releases/tag/v1.7.4) - 2024-10-18
 
 [_Compare with previous release_](https://github.com/julienloizelet/ddev-tools/compare/v1.7.3...v1.7.4)
